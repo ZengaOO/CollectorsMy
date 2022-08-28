@@ -1,18 +1,47 @@
 html {
   font-size: 14px;
 }
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-
 html {
   position: relative;
   min-height: 100%;
 }
-
+header {
+    background-color: mediumaquamarine;
+    border: none;
+}
+tablink {
+    background-color: #555;
+    color: orangered;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: white;
+
+}
+Movies {
+    background-color: forestgreen;
+}
+Books {
+    background-color: mediumvioletred;
+}
+Music {
+    background-color: darkorange;
+}
+Comics {
+    background-color: mediumaquamarine;
+}
+Games {
+    background-color: darkred;
 }
