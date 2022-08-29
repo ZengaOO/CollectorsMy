@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CollectorsMy.styles.css" asp-append-version="true" />
-    
   </head>
 
+ <body>
+
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  bg-#227093 border-bottom box-shadow mb-3" style="background-color: #227093;">
             
                
                  <link rel="icon" href="/images/collectorz-icon.png" type="images.png">
-                 <h1 style="width: 50%; color: blue;font-size:30px;"><img src="images/collectorz-icon.png"  height="50" width="50"/>CollectorsMy.com ©</h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                 <h1 style="width: 50%; color: #2279;font-size:30px;"><img src="images/collectorz-icon.png"  height="50" width="50"/>CollectorsMy.com ©</h1>
+               
                 <div class="col-xs-12 col-sm-7 col-md-8 make-relative">
-
+                   
+                      
+         
+   
                   
-                            <ul class="nav nav-tabs">
+                            <ul class="nav nav-tabs" >
                                 
                                 <li class="nav-item" id="Movies">
                                     <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Movies">Movies</a>
@@ -38,7 +39,7 @@
                                     <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Comics">Comics</a>
                                 </li>
                                  <li class="nav-item" id="Games">
-                                    <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Games">Games</a>
+                                     <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Games">Games</a>
                                 </li>
                             </ul>
            
@@ -51,16 +52,20 @@
                                            <a href="https://help.clz.com/game" target="_blank" rel="noopener" class="pull-right">Support</a>
                     
                                 </div>
+                       
                 </div>
+           
         </nav>
+      
     </header>
-  <body>
+ 
+ 
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-  </body>
+  
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - CollectorsMy.com © Copyright 2000-2022  - <a asp-area="" asp-controller="Home" asp-action="Private">Private</a>
@@ -70,5 +75,5 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-  
+ </body> 
 </html>
